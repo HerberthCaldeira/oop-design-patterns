@@ -6,7 +6,7 @@ use App\Pattern\Composite\Interfaces\IComponent;
 
 class BoxProducts implements IComponent
 {
-    public array $products = [];
+    private array $products = [];
 
     public function __construct(private string $name, private int $value)
     {}
